@@ -7,6 +7,8 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
+import br.com.byu.guidebook.domain.entity.Guide;
+
 public class GuideAggregation implements Parcelable {
 
     public static final Parcelable.Creator<GuideAggregation> CREATOR = new Parcelable.Creator<GuideAggregation>() {
@@ -21,7 +23,7 @@ public class GuideAggregation implements Parcelable {
         }
     };
     @SerializedName("data")
-    public List guides;
+    public List<Guide> guides;
 
     /* @SerializedName("url")
     @Expose
@@ -35,7 +37,7 @@ public class GuideAggregation implements Parcelable {
     }
 
     protected GuideAggregation(Parcel in) {
-        this.guides = in.createTypedArrayList(br.com.byu.guidebook.domain.entity.GuideAggregation.CREATOR);
+        this.guides = in.createTypedArrayList(Guide.CREATOR);
     }
 
     @Override

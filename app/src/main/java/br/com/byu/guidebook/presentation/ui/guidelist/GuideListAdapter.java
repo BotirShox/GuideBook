@@ -14,17 +14,17 @@ import com.squareup.picasso.Picasso;
 import java.util.List;
 
 import br.com.byu.guidebook.R;
-import br.com.byu.guidebook.domain.entity.GuideAggregation;
+import br.com.byu.guidebook.domain.entity.Guide;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class GuideListAdapter extends RecyclerView.Adapter<GuideListAdapter.ViewHolder> {
 
     private Context context;
-    private List<GuideAggregation> guides;
+    private List<Guide> guides;
     //private OnItemClickListener onItemClickListener;
 
-    public GuideListAdapter(Context context, List<GuideAggregation> guides) {
+    public GuideListAdapter(Context context, List<Guide> guides) {
         this.context = context;
         this.guides = guides;
     }
@@ -36,9 +36,9 @@ public class GuideListAdapter extends RecyclerView.Adapter<GuideListAdapter.View
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holders, int position) {
-        final ViewHolder holder = holders;
-        GuideAggregation guide = guides.get(position);
+    public void onBindViewHolder(ViewHolder holder, int position) {
+       // final ViewHolder holder = holders;
+        Guide guide = guides.get(position);
 
         if (guide != null) {
             if (!TextUtils.isEmpty(guide.icon)) {

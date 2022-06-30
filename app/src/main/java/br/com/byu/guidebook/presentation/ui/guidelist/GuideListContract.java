@@ -2,12 +2,12 @@ package br.com.byu.guidebook.presentation.ui.guidelist;
 
 import java.util.List;
 
-import br.com.byu.guidebook.domain.entity.GuideAggregation;
+import br.com.byu.guidebook.domain.entity.Guide;
 
 public interface GuideListContract {
 
     interface View {
-        void setupGuideList(List<GuideAggregation> companies);
+        void setupGuideList(List<Guide> companies);
 
         void showLoadingLayout();
 

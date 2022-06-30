@@ -3,17 +3,17 @@ package br.com.byu.guidebook.domain.entity;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-public class GuideAggregation implements Parcelable {
+public class Guide implements Parcelable {
 
-    public static final Creator<GuideAggregation> CREATOR = new Creator<GuideAggregation>() {
+    public static final Creator<Guide> CREATOR = new Creator<Guide>() {
         @Override
-        public GuideAggregation createFromParcel(Parcel source) {
-            return new GuideAggregation(source);
+        public Guide createFromParcel(Parcel source) {
+            return new Guide(source);
         }
 
         @Override
-        public GuideAggregation[] newArray(int size) {
-            return new GuideAggregation[size];
+        public Guide[] newArray(int size) {
+            return new Guide[size];
         }
     };
 
@@ -23,7 +23,7 @@ public class GuideAggregation implements Parcelable {
     public String icon;
     public String startDate;
 
-    protected GuideAggregation(Parcel in) {
+    protected Guide(Parcel in) {
 
         this.endDate = in.readString();
         this.name = in.readString();

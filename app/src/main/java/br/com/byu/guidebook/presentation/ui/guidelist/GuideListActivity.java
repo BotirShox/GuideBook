@@ -11,7 +11,7 @@ import java.util.List;
 import javax.inject.Inject;
 
 import br.com.byu.guidebook.R;
-import br.com.byu.guidebook.domain.entity.GuideAggregation;
+import br.com.byu.guidebook.domain.entity.Guide;
 import br.com.byu.guidebook.presentation.base.BaseActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -57,7 +57,7 @@ public class GuideListActivity extends BaseActivity implements GuideListContract
     }
 
     @Override
-    public void setupGuideList(List<GuideAggregation> guides) {
+    public void setupGuideList(List<Guide> guides) {
         LinearLayoutManager manager = new LinearLayoutManager(this);
         GuideListAdapter companyListAdapter = new GuideListAdapter(this, guides);
         guideList.setLayoutManager(manager);

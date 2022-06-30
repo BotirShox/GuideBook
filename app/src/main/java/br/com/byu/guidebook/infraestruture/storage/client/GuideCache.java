@@ -2,7 +2,7 @@ package br.com.byu.guidebook.infraestruture.storage.client;
 
 import java.util.List;
 
-import br.com.byu.guidebook.domain.entity.GuideAggregation;
+import br.com.byu.guidebook.domain.entity.Guide;
 import br.com.byu.guidebook.infraestruture.operator.WorkerOperator;
 import io.paperdb.Paper;
 import io.paperdb.PaperDbException;
@@ -11,10 +11,10 @@ import rx.Subscriber;
 
 public class GuideCache {
 
-    public Observable<List<GuideAggregation>> set(final List<GuideAggregation> guides) {
-        return Observable.create(new Observable.OnSubscribe<List<GuideAggregation>>() {
+    public Observable<List<Guide>> set(final List<Guide> guides) {
+        return Observable.create(new Observable.OnSubscribe<List<Guide>>() {
             @Override
-            public void call(Subscriber<? super List<GuideAggregation>> subscriber) {
+            public void call(Subscriber<? super List<Guide>> subscriber) {
                 try {
                     Paper.book().write("Guide :", guides);
                     subscriber.onNext(guides);
@@ -26,11 +26,11 @@ public class GuideCache {
         }).compose(new WorkerOperator<>());
     }
 
-    public Observable<List<GuideAggregation>> get() {
-        return Observable.create(new Observable.OnSubscribe<List<GuideAggregation>>() {
+    public Observable<List<Guide>> get() {
+        return Observable.create(new Observable.OnSubscribe<List<Guide>>() {
             @Override
-            public void call(Subscriber<? super List<GuideAggregation>> subscriber) {
-                List<GuideAggregation> guides = Paper.book().read("Event :");
+            public void call(Subscriber<? super List<Guide>> subscriber) {
+                List<Guide> guides = Paper.book().read("Event :");
                 if (guides != null) {
                     subscriber.onNext(guides);
                     subscriber.onCompleted();
