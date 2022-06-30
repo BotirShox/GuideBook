@@ -1,0 +1,50 @@
+# Built application files
+*.apk
+*.ap_
+# Files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+
+# Gradle files
+build/
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+.gradletasknamecache
+
+# Project files
+*.iml
+.idea/
+
+# NDK
+obj/
+
+# Local configuration file (sdk path, etc)
+local.properties
+keystore.properties
+
+# Windows thumbnail db
+.DS_Store
+
+# Idea non-crucial project files
+*.iws
+hs_err*
+
+# Logs
+hs_err*
+*.log
+
+# Merge stuff
+build.gradle.orig
+*.orig
+*.swp
+
+# Sandbox stuff
+_sandbox
