@@ -15,5 +15,13 @@
 - Применить MV (VM, C)
 - Использование базы данных SQLite
 
-Залейте свой код на GitHub (крупнейший веб-сервис для хостинга IT-проектов и их совместной разработки) и отправьте нам ссылку![555](https://user-images.githubusercontent.com/38154419/176922128-9869a8b0-1cf2-4e5a-84b6-bda7c54ecbaa.png)
-![555](https://user-images.githubusercontent.com/38154419/176922164-cc0aea07-97a5-4b42-8742-61febcd30aae.png)
+Залейте свой код на GitHub (крупнейший веб-сервис для хостинга IT-проектов и их совместной разработки) и отправьте нам ссылку!
+
+
+!
+
+
+[555]
+
+
+(https://user-images.githubusercontent.com/38154419/176922164-cc0aea07-97a5-4b42-8742-61febcd30aae.png)
