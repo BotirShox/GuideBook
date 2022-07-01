@@ -18,10 +18,4 @@
 Залейте свой код на GitHub (крупнейший веб-сервис для хостинга IT-проектов и их совместной разработки) и отправьте нам ссылку!
 
 
-!
-
-
-[555]
-
-
-(https://user-images.githubusercontent.com/38154419/176922164-cc0aea07-97a5-4b42-8742-61febcd30aae.png)
+![555](https://user-images.githubusercontent.com/38154419/176922394-da2703b9-aed2-49f0-bb77-b94b533f542f.png)
